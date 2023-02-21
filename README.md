@@ -7,10 +7,10 @@ Versão completa e funcional do projeto:
 https://joguindeclicar-4oqp.onrender.com/jogo.html
 
 
-
+Foi usado:
 - Node.js
 - Express
-CORS no express pras fetchs
-dotenv para esconder o login da DB
+- CORS
+- Dotenv
 
--Front end foi usado javascript vanilla
+- Javascript puro no front end
