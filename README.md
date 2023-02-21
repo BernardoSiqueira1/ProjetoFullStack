@@ -2,7 +2,7 @@
 
 Projeto simples full stack de um joguinho que manda sua pontuação para um banco de dados.
 
-Versão completa e funcional(?????) do projeto:
+Versão funcional do projeto:
 https://joguindeclicar-4oqp.onrender.com/jogo.html
 
 
