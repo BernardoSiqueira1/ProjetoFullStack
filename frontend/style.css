@@ -1,0 +1,59 @@
+.input{
+    max-width: 190px;
+    width: 190px;
+    text-align: center;
+    align-items:flex-end;
+    text-transform: uppercase;
+}
+
+#titulopontos{
+    position: absolute;
+    right: 3%;
+    top:-2%;
+}
+
+#leaderboard{
+    position: absolute;
+    right: 2%;
+    top:5%;
+    overflow: hidden;
+    list-style: none;
+    height: 450px;
+    max-height: 450px;
+    width:200px;
+    max-width: 200px;
+    border: 2px solid black;
+    padding:10px;
+}
+
+.dados{
+    font-size: 20px;
+    display: inline;
+}
+
+#jogo{
+    display: block;
+    border: 5px solid black;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+
+#botaojogo{
+    width: 500px;
+}
+
+#enviar{
+    color:white;
+    background-color:green;
+    max-width: 198px;
+    width: 198px;
+}
+
+#enviar:hover{
+    background-color: rgb(3, 175, 3);
+}
+
+.temporizador{
+    font-size: 20px;
+}
