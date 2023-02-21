@@ -13,4 +13,4 @@ Feito com:
 . CORS no express pras fetchs
 . dotenv para esconder o login da DB
 
--Front-end foi usado javascript vanilla
+-Front end foi usado javascript vanilla
