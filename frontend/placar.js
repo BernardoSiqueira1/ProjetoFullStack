@@ -4,7 +4,7 @@ const leaderboard = document.getElementById("leaderboard");
 
 async function PegarDados(){
     try{
-    const retorno = await fetch(`${process.env.DADOS}`);
+    const retorno = await fetch("https://joguindeclicar.onrender.com/leaderboard");
     const lista = await retorno.json();
     MostrarDados(lista);
     }
@@ -52,7 +52,7 @@ async function EnviarDados(iniciais, pontuacao){
         score: pontuacao
     }
     
-    await fetch(`${process.env.DADOS}`, {
+    await fetch("https://joguindeclicar.onrender.com/leaderboard", {
         method: 'POST',
         headers: {
             Accept: 'application/json',
