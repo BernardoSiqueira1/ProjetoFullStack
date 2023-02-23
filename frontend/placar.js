@@ -4,7 +4,7 @@ const leaderboard = document.getElementById("leaderboard");
 
 async function PegarDados(){
     try{
-    const retorno = await fetch(`https://joguindeclicar.onrender.com/leaderboard`);
+    const retorno = await fetch(`${process.env.DADOS}`);
     const lista = await retorno.json();
     MostrarDados(lista);
     }
@@ -36,7 +36,7 @@ function ChecarDados(){
     let pontuacao = document.getElementById("pontuacao").value;
 
     if (iniciais === ""){
-        return alert("Não foi possível salvar a pontuação (campos inválidos)")
+        return alert("Não foi possível salvar a pontuação (campo nome inválido)")
     }
     else{
         EnviarDados(iniciais, pontuacao);
@@ -52,7 +52,7 @@ async function EnviarDados(iniciais, pontuacao){
         score: pontuacao
     }
     
-    await fetch(`https://joguindeclicar.onrender.com/leaderboard`, {
+    await fetch(`${process.env.DADOS}`, {
         method: 'POST',
         headers: {
             Accept: 'application/json',
